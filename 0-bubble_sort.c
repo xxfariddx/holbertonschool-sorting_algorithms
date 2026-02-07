@@ -18,7 +18,7 @@ int _putchar(char c)
  * @size: number of elements
  *
  * Description: Prints array elements separated by space, ends with newline.
- * Only works for positive integers.
+ * Only handles positive integers.
  */
 void print_array(int *array, size_t size)
 {
@@ -78,19 +78,16 @@ void bubble_sort(int *array, size_t size)
         {
             if (array[j] > array[j + 1])
             {
-                /* Swap elements */
                 temp = array[j];
                 array[j] = array[j + 1];
                 array[j + 1] = temp;
 
-                /* Print array after each swap */
                 print_array(array, size);
 
                 swapped = 1;
             }
         }
 
-        /* If no swaps, array is sorted */
         if (swapped == 0)
             break;
     }
