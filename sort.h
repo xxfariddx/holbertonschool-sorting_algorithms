@@ -3,10 +3,13 @@
 
 #include <stddef.h>
 
-/* Bubble sort algorithm prototype */
+/* Bubble sort prototype */
 void bubble_sort(int *array, size_t size);
 
-/* Helper function to print an array (for debugging) */
+/* Print array prototype */
 void print_array(int *array, size_t size);
+
+/* Putchar prototype */
+int _putchar(char c);
 
 #endif /* SORT_H */
